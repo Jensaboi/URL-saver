@@ -1,4 +1,4 @@
-import { addUrlToList } from "./list.service.js"
+import { addUrlToList, addCurrentTab, SetLocalStorage } from "./list.service.js"
 import { list, renderList } from "../index.js"
 import { constants } from "../consts/constants.js"
 
@@ -11,6 +11,8 @@ export function initBtns(){
   })
 
   document.getElementById("save-tab-btn").addEventListener("click", () =>{
+    addCurrentTab()
+    renderList()
     constants.urlInput.value = ""
     console.log(list)
   })

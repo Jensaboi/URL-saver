@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Tab and Url saver",
+  "version": "0.1",
+  "author": "jensaBOI",
+
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Tab and Url saver"
+  },
+
+  "permissions": ["scripting", "tabs", "activeTab"],
+  "host_permissions": ["https://*"]
+}

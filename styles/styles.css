@@ -15,10 +15,11 @@ body{
 }
 
 .btn{
+  font-weight: 700;
   font-size: 1rem;
   text-transform: uppercase;
-  background-color: green;
-  color: white;
+  background-color: lightblue;
+  color: darkblue;
   padding: 0.5em 1em;
   border: none;
   border-radius: 0.5em;
@@ -32,10 +33,11 @@ body{
 }
 
 input{
+  font-weight: 700;
   padding: 0.5em;
   font-size: 1rem;
-  border: 2px solid green;
-  color: green;
+  border: 2px solid lightblue;
+  color: darkblue;
   width: 100%;
   margin-bottom: 5px;
 }
