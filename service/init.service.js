@@ -1,5 +1,4 @@
-import { addUrlToList, addCurrentTab, SetLocalStorage } from "./list.service.js"
-import { list, renderList } from "../index.js"
+import { addUrlToList, addCurrentTab, renderList, emptyList, list } from "./list.service.js"
 import { constants } from "../consts/constants.js"
 
 export function initBtns(){
@@ -7,14 +6,15 @@ export function initBtns(){
     addUrlToList()
     renderList()
     constants.urlInput.value = ""
-    console.log(list)
   })
 
   document.getElementById("save-tab-btn").addEventListener("click", () =>{
     addCurrentTab()
     renderList()
     constants.urlInput.value = ""
-    console.log(list)
   })
  
+  document.getElementById("delete-btn").addEventListener("dblclick", () =>{
+    emptyList()
+  })
 }

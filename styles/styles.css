@@ -12,9 +12,11 @@ body{
   background-color: #fff;
   color: rgb(22, 20, 20);
   line-height: 1.4;
+  font-size: 20px;
 }
 
 .btn{
+  cursor: pointer;
   font-weight: 700;
   font-size: 1rem;
   text-transform: uppercase;
@@ -24,7 +26,10 @@ body{
   border: none;
   border-radius: 0.5em;
 }
-
+.delete{
+  background-color: red;
+  color: white;
+}
 .btn-container{
   display: flex;
   justify-content: start;
@@ -40,5 +45,10 @@ input{
   color: darkblue;
   width: 100%;
   margin-bottom: 5px;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
 }
 
