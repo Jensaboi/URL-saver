@@ -1,4 +1,4 @@
-import { addUrlToList, addCurrentTab, renderList, emptyList, list } from "./list.service.js"
+import { addUrlToList, addCurrentTab, renderList, emptyList } from "./list.service.js"
 import { constants } from "../consts/constants.js"
 
 export function initBtns(){
